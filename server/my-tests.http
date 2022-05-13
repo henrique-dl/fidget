@@ -1,0 +1,11 @@
+@hostname = http://localhost:3333
+
+# get {{hostname}}
+
+post http://localhost:3333/feedbacks
+Content-Type: application/json
+
+{
+  "type": "BUG",
+  "comment": "Está tudo bugado!!!"
+}
